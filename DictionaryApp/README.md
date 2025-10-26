@@ -11,7 +11,7 @@ A simple Java console application that allows users to search for words in a dic
 
 ## Project Structure
 
-├── bin/
+├── bin/                          
 ├── src/
 │ ├── Main.java # Entry point of the app and holds all the logic                  
 ├── lib/
