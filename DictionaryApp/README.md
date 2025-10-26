@@ -11,14 +11,13 @@ A simple Java console application that allows users to search for words in a dic
 
 ## Project Structure
 
-│
+├── bin/
 ├── src/
-│ ├── Main.java # Entry point of the app and holds all the logic
-├── data/
-│ └── dictionary.db # Local SQLite database 
+│ ├── Main.java # Entry point of the app and holds all the logic                  
 ├── lib/
-│ └── sqlite-jdbc-3.50.3.0.jar # SQLite connector
-├── README.md
+│ └── sqlite-jdbc-3.50.3.0.jar # SQLite connector                                 
+├──dictionary.db # Local SQLite database                           
+├── README.md                                       
 └── .gitignore
 
 
@@ -38,7 +37,7 @@ git clone https://github.com/your-username/DictionaryApp.git
 cd DictionaryApp 
 # run using:
 javac -cp "lib/sqlite-jdbc-3.50.3.0.jar" src/Main.java
-  java -cp "lib/sqlite-jdbc-3.50.3.0.jar;src" Main
+java -cp "lib/sqlite-jdbc-3.50.3.0.jar;src" Main
 
 
 
