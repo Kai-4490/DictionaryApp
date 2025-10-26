@@ -1,18 +1,44 @@
-## Getting Started
+# Simple Dictionary App (Java + SQLite)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple Java console application that allows users to search for words in a dictionary stored in an SQLite database
+## Features
 
-## Folder Structure
+- Search for a word and get its:
+  - Word Type (noun, verb, etc.)
+  - Definition
+- Uses SQLite database to store dictionary entries.
+- Simple, lightweight, and easy to use.
 
-The workspace contains two folders by default, where:
+## Project Structure
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+│
+├── src/
+│ ├── Main.java # Entry point of the app and holds all the logic
+├── data/
+│ └── dictionary.db # Local SQLite database 
+├── lib/
+│ └── sqlite-jdbc-3.50.3.0.jar # SQLite connector
+├── README.md
+└── .gitignore
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Prerequisites
 
-## Dependency Management
+- Java JDK 8 or higher
+- Optional: DB Browser for SQLite (to view/edit database entries)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Run
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/DictionaryApp.git
+
+
+#Navigate to the project folder:
+cd DictionaryApp 
+# run using:
+javac -cp "lib/sqlite-jdbc-3.50.3.0.jar" src/Main.java
+  java -cp "lib/sqlite-jdbc-3.50.3.0.jar;src" Main
+
+
+
